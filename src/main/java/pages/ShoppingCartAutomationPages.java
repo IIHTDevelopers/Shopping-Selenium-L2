@@ -25,6 +25,23 @@ public class ShoppingCartAutomationPages extends StartupPage
 	By removeIcon= By.xpath(""); 
 	By removeMessage= By.xpath(""); 
 	By proceedToCheckoutButton= By.xpath(""); 
+	By priceReadOnlyField = By.xpath(""); 
+	By increasedProductInCart= By.xpath(""); 
+	By myAccountIcon= By.xpath(""); 
+	By usernameTextField= By.id(""); 
+	By passwordTextField= By.id(""); 
+	By loginButton= By.xpath(""); 
+	By emailAddressTextField= By.id(""); 
+	By registerButton= By.xpath(""); 
+	By passwordTextFieldInRegister=By.id("");	
+	By testCasesIcon=By.xpath(""); 
+	By atSiteIcon=By.xpath(""); 
+	By seleniumText=By.xpath(""); 
+	By appiumText=By.xpath(""); 
+	By refineByField=By.xpath(""); 
+	By homeShopMenu=By.xpath(""); 
+	By filterByPriceSlider=By.xpath(""); 
+	
 
 
 
@@ -147,86 +164,7 @@ public class ShoppingCartAutomationPages extends StartupPage
 	}
 
 	
-	/**@Test12
-	 * about this method seleniumRubyProductIsPresent() 
-	 * @param : null
-	 * @description : verify Selenium ruby product is present or not
-	 * @return : return true if seleniumRuby product is present InsideTheBasketPage, else false
-	 * @author : Yaksha
-	 */
-	public boolean seleniumRubyProductIsPresent() throws Exception {
-		return false;
-	}
-	
-	/**@Test13
-	 * about this method verifyCouponcodeFieldAndApplyCouponButtonIsPresent() 
-	 * @param : null
-	 * @description : verify coupon code field and apply coupon code button is present
-	 * @return : return true if applyCouponcodeButton is  present, else false
-	 * @author : Yaksha
-	 */
-	public boolean verifyCouponcodeFieldAndApplyCouponButtonIsPresent() throws Exception {
-		return false;
-	}
-	
-	/**@Test14
-	 * about this method priceDefinedAfterProductName() 
-	 * @param : null
-	 * @description : verify price ReadOnlyField is present or not
-	 * @return : return true if priceReadOnlyField is  present, else false
-	 * @author : Yaksha
-	 */
-	public boolean priceDefinedAfterProductName() throws Exception {
-		return false;
-	}
-	
-	/**@Test15
-	 * about this method quantityDefinedAfterProductPrice() 
-	 * @param : null
-	 * @description : verify quantity Field is present or not
-	 * @return : return true if quantityField is  present, else false
-	 * @author : Yaksha
-	 */
-	public boolean quantityDefinedAfterProductPrice() throws Exception {
-		return false;
-	}
-	
-	/**@Test16
-	 * about this method totalDefinedIsPresentAfterQuantity() 
-	 * @param : null
-	 * @description : verify total field is present or not
-	 * @return : return true if totalField is  present, else false
-	 * @author : Yaksha
-	 */
-	public boolean totalDefinedIsPresentAfterQuantity() throws Exception {
-		return false;
-	}
-	
-	/**@Test17
-	 * about this method removeIconIsPresentandRemoveTheProduct() 
-	 * @param : null
-	 * @description : verify removeIcon is present or not then click on remove icon to remove the product
-	 * @return : return true if removeMessage is  present, else false
-	 * @author : Yaksha
-	 */
-	public boolean removeIconIsPresentandRemoveTheProduct() throws Exception {
-		return false;
-	}
-	
-	/**@Test18
-	 * about this method validatetheMessageAfterRemovingAProduct() 
-	 * @param : null
-	 * @description : check remove message is present and validate the Message After Removing A Product
-	 * @return : return String if page title is matching
-	 * @author : Yaksha
-	 */
-	public String validatetheMessageAfterRemovingAProduct() throws Exception {
-		return null;
-
-	}
-	
-
-	/**@Test19 same as @Test11
+	/* @Test11
 	 * about this method goToTheHomeIconclickonseleniumrubyThenClickOnAddToBasketThenClickOnViewBasket() 
 	 * @param : null
 	 * @description : go To The Home Icon then click on Seleniumruby Then Click On Add To Basket Then Click On View Basket
@@ -237,16 +175,111 @@ public class ShoppingCartAutomationPages extends StartupPage
 		return false;
 	}
 	
-	/**@Test20
-	 * about this method validateIfWeHaveAProceedToCheckoutButtonORNot() 
+	/**@Test12
+	 * about this method seleniumRubyProductIsPresent() 
 	 * @param : null
-	 * @description : verify proceedToCheckoutButton is present 
-	 * @return : return true if proceedToCheckoutButton is  present, else false
+	 * @description : verify Selenium ruby product is present or not
+	 * @return : return true if seleniumRuby product is present InsideTheBasketPage, else false
 	 * @author : Yaksha
 	 */
-	public boolean validateIfWeHaveAProceedToCheckoutButtonORNot() throws Exception {
+	public boolean seleniumrubyProductIsPresent() throws Exception {
 		return false;
 	}
 	
+	
+	/**@Test13
+	 * about this method verifyAllFieldsarePresent() 
+	 * @param : null
+	 * @description : verify seleniumRubyInsideTheBasketPage,couponcodeField,applyCouponcodeButton,priceReadOnlyField,quantityField,totalFields are present or not
+	 * @return : return true if totalField  is present InsideTheBasketPage, else false
+	 * @author : Yaksha
+	 */
+	public boolean verifyAllFieldsarePresent() throws Exception {
+		return false;
+	}
+	
+	
+
+	/**@Test14
+	 * about this method removeIconIsPresentandRemoveTheProductAndValidateTheMessage() 
+	 * @param : null
+	 * @description : verify removeIcon is present or not then click on remove icon to remove the product and validate the remove message
+	 * @return : return string if removeMessage is  matching
+	 * @author : Yaksha
+	 */
+	public String removeIconIsPresentandRemoveTheProductAndValidateTheMessage() throws Exception {
+		return null;
+	}
+	
+	/*@Test15
+	 * about this method goToTheHomeIconclickonseleniumrubyThenClickOnAddToBasketThenClickOnViewBasket() 
+	 * @param : null
+	 * @description : go To The Home Icon then click on Seleniumruby Then Click On Add To Basket Then Verify The Item Is Increased
+	 * @return : return string if product is increase to one in cart
+	 * @author : Yaksha
+	 */
+	public String goToTheHomeIconclickonseleniumrubyThenClickOnAddToBasketThenVerifyTheItemIsIncreased() throws Exception {
+		return null;
+	}
+	
+
+	/**@Test16
+	 * about this method clickOnMyAccountAndVerifyAllTheFieldsArePresent() 
+	 * @param : null
+	 * @description : click On My Account And Verify All The Fields Are Present
+	 * @return : return true if registerButton is  present, else false
+	 * @author : Yaksha
+	 */
+	public boolean clickOnMyAccountAndVerifyAllTheFieldsArePresent() throws Exception {
+		return false;
+	}
+	
+	/**@Test17
+	 * about this method clickonTestCasesItsShouldNavigateToTheTestCasesPages() 
+	 * @param : null
+	 * @description : click on testcases verify it is navigating to the Testcase page.
+	 * @return : return String if page title is matching
+	 * @author : Yaksha
+	 */
+	public String clickonTestCasesItsShouldNavigateToTheTestCasesPages() throws Exception {
+		return null;
+	}
+	
+	
+	/**@Test18
+	 * about this method verifyTheurlOfTheTestCasesPages() 
+	 * @param : null
+	 * @description : verify URL of the testcase page
+	 * @return : return string if URL is matching
+	 * @author : Yaksha
+	 */
+	public String verifyTheurlOfTheTestCasesPages() throws Exception {
+		return null;
+	}
+	
+	
+	/**@Test19
+	 * about this method clickOnAtSiteAndVerifyTheSeleniumAndAppiumFieldsArePresent() 
+	 * @param : null
+	 * @description : click On At Site And Verify Selenium And Appium Fields Are Present
+	 * @return : return true if seleniumText is  present, else false
+	 * @author : Yaksha
+	 */
+	public boolean clickOnAtSiteAndVerifyTheSeleniumAndAppiumFieldsArePresent() throws Exception {
+		return false;
+	}
+	
+	/**@Test20
+	 * about this method clickonShopAndVerifyTheRefineByHomeshopAndFilterByPriceFieldsArePresent() 
+	 * @param : null
+	 * @description : navigate to the previous page and click on shop and verify refineBy field,home shop menu,filterByPriceSlider are present
+	 * @return : return true if filterByPriceSlider is  present, else false
+	 * @author : Yaksha
+	 */
+	public boolean clickonShopAndVerifyTheRefineByHomeshopAndFilterByPriceFieldsArePresent() throws Exception {
+		return false;
+	}
+	
+
 	
 }
