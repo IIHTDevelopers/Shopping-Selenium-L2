@@ -100,7 +100,7 @@ public class ShoppingCartAutomationPages extends StartupPage
 	 * about this method checkIfHomePageHasSectionOfNewArrivals() 
 	 * @param : null
 	 * @description : check home page has a section of new arrival.
-	 * @return : return true if newArrival Button is present, else false
+	 * @return : return true if newArrival section is present, else false
 	 * @author : Yaksha
 	 */
 	public boolean checkIfHomePageHasSectionOfNewArrivals() throws Exception {
